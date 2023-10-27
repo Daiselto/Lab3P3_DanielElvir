@@ -1,19 +1,62 @@
-// Lab3P3_DanielElvir.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+void menu() {
+    cout << "1. Aproximacion de PI" << endl;
+    cout << "2. Encontrar Numeros de la secuencia de Pell" << endl;
+    cout << "3. Encontrar Numeros Amigos en un Rango" << endl;
+    cout << "4. Salir" << endl;
+    cout << "Escoja una de las opciones validas" << endl;
 }
 
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
+void ejercicio1() {
+    int puntos;
+    bool verify = true;
+    cout << "Ingrese el total de puntos que se deben generar (tiene que ser mayor o igual a 1000000: ";
+    cin >> puntos;
+    while (verify){
+        if (puntos>=1000000){
 
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
+        } else {
+            cout << "Ingrese un numero valido"
+        }
+    }
+
+}
+
+void ejercicio2() {
+
+}
+
+void ejercicio3() {
+
+}
+
+int main() {
+    int opcion;
+    bool seguir = true;
+    while (seguir){
+        menu();
+        cin >> opcion;
+        switch (opcion) {            
+            case 1:                 
+                cout << "En construccion el primero" << endl;
+                break;
+            case 2:
+                cout << "En construccion el segundo" << endl;
+                break;
+            case 3:
+                cout << "En construccion el tercero" << endl;
+                break;
+            case 4:
+                cout << "Saliendo del Programa..." << endl;
+                cout << "Gracias por usarlo :D" << endl;
+                seguir = false;
+                break;
+            default:
+                cout << "INGRESE UNA DE LAS OPCIONES VALIDAS" << endl;
+                break;
+        }
+    }
+   
+}
+
